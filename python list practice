@@ -1,0 +1,17 @@
+shopping = ["bread","bananas","joseos","mianayse", "tortillas","frijoles"]
+
+shopping.append("applejuice")
+print(shopping)
+
+shopping.remove("bread")
+print(shopping)
+
+shopping.insert(2,"bananas")
+print(shopping)
+
+print(len(shopping))
+
+if "beef" in shopping:
+    print("True")
+else:
+    print("False")
