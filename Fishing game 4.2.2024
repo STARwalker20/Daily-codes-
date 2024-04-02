@@ -1,0 +1,55 @@
+import pygame
+import random
+pygame.init()  
+pygame.display.set_caption("fish")  # sets the window title
+screen = pygame.display.set_mode((800, 800))  # creates game screen                                        
+clock = pygame.time.Clock() #set up clock
+gameover = False #variable to run our game loop
+
+class bar:
+   def __init__(self,xpos,ypos):
+       self.xpos = xpos
+       self.ypos = ypos
+       self.isalive = True
+       self.xvel = 0
+       self.yvel = 0
+   def draw(self):
+       pygame.draw.rect(screen,(225,225,225),(self.xpos, self.ypos,20,70))
+   def move(self,xpos,ypos):
+        print("bar moving")
+        self.xpos += 
+        self.ypos += 
+
+
+
+isonground = False
+                    
+    
+
+Bar = bar(400,400)
+
+while not gameover:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            gameover = True
+
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+               
+
+            if event.key == pygame.K_RIGHT:
+
+            if event.key == pygame.K_SPACE:
+                
+
+
+
+    screen.fill((0,0,0))
+    Bar.draw()
+
+    pygame.display.flip()
+    
+   
+    
+#end game loop
+pygame.quit()  
